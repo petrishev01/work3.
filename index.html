@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/image.png">
+</head>
+<body>
+<header>
+    <div id="header">
+        <img id="logotip" src="images/image.png" alt="logotip">
+        <h1 class="name"> Something written </h1>
+    </div>
+</header>
+<main>
+    <div id="container">
+        <p class="navigation">
+            <a href="#links">Список гиперссылок</a>
+            <a href="#table">Таблица</a>
+            <a href="#form">Форма</a>
+        </p>
+
+        <div id="links">
+            <ol>
+                <li><a href="http://cats.com" id="#flag">Абсолютная гиперссылка на главную страницу сайта</a></li>
+                <li><a href="https://meme.com">Абсолютная на главную в протоколе https</a></li>
+                <li><a href="ftp://ubisoft.com/games/example">Ссылка на файл на сервере FTP без авторизации</a></li>
+                <li><a href="ftp://user:password@ubisoft.com/games/example">С авторизацией</a></li>
+                <li>
+                    <a href="https://ru.wikipedia.org/wiki/Википедия:Внутренние_ссылки#На_что_следует_ссылаться">
+                        Ссылка на фрагмент страницы некоторого сайта
+                    </a>
+                </li>
+                <li><a href="#element_id">Cсылка на фрагмент текущей страницы</a></li>
+                <li><a href="https://idroo.com/?a=0&c=1">Cсылка с двумя параметрами</a></li>
+                <li>
+                    <ul>
+                        <li><a href="#element_id" title="О чём">Оглавление</a></li>
+                        <li><a href="#flag" title="Суть">Основной материал</a></li>
+                    </ul>
+                </li>
+                <li><a>Ссылка без href</a></li>
+                <li><a href="">Ссылка с пустым href</a></li>
+                <li><a href="https://cats.com" rel="nofollow">Запрет перехода поисковикам</a></li>
+                <li><a href="https://cats.com" rel="noindex">Запрещенная для индексации поисковиками</a></li>
+                <li>
+                    <p>
+                        Я очень люблю <a href="https://meme.com">мемы</a>
+                    </p>
+                </li>
+                <li>
+                    <a href="https://ru.wikipedia.org/wiki/Муравьи">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Fire_ants02.jpg?uselang=ru" width="100" height="100" alt="">
+                    </a>
+                </li>
+                <li>
+                    <img src="https://st2.depositphotos.com/1902695/7964/i/600/depositphotos_79649494-stock-photo-bull-frog-close-up-portrait.jpg" width="200" height="200" usemap="#Жаба" alt="">
+                    <map name="Жаба">
+                        <area shape="circle" coords="100,100,50" href="https://www.youtube.com/watch?v=_5348G7LZQc" alt="">
+                        <area shape="rect" coords="150,150,200,200" href="https://ru.wikipedia.org/wiki/Прямоугольник" alt="">
+                    </map>
+                </li>
+                <li><a href="kek">Относительная ссылка на страницу в текущем каталоге</a></li>
+                <li><a href="./about/lol">Относительная ссылка на страницу в каталоге about</a></li>
+                <li><a href="../meme">Относительная на страницу в каталоге уровнем выше текущего</a></li>
+                <li><a href="../../peace">Относительная на страницу в каталоге двумя уровнями выше текущего</a></li>
+                <li><a href="/">Сокращенная ссылка на главную</a></li>
+                <li><a href="/world">Сокращенная ссылка на внутреннюю</a></li>
+            </ol>
+        </div>
+
+        <div class="table" id="table">
+            <h2> Таблица</h2>
+            <table>
+                <tbody>
+                <tr>
+                    <th class="header_table" colspan="4">Заголовок таблицы</th>
+                </tr>
+                <tr>
+                    <td>Ячейка 11</td>
+                    <td>Ячейка 12</td>
+                    <td>Ячейка 13</td>
+                    <td>Ячейка 14</td>
+                </tr>
+                <tr class="even">
+                    <td>Ячейка 21</td>
+                    <td>Ячейка 22</td>
+                    <td rowspan="2" class="union">Ячейка 23</td>
+                    <td>Ячейка 24</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 31</td>
+                    <td>Ячейка 32</td>
+                    <td>Ячейка 34</td>
+                </tr>
+                <tr class="even" align="center">
+                    <td>Ячейка 41</td>
+                    <td colspan="2" class="union">Ячейка 42</td>
+                    <td>Ячейка 44</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 51</td>
+                    <td>Ячейка 52</td>
+                    <td>Ячейка 53</td>
+                    <td>Ячейка 54</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="form">
+            <h2>Форма</h2>
+            <form method="post">
+                <label>Имя:<br>
+                    <input name="field-name" value="" placeholder="Имя">
+                </label><br><br>
+
+                <label>
+                    Ваш email:<br>
+                    <input name="field-email" value="" placeholder="test@example.com" type="email">
+                </label><br><br>
+
+                <label>
+                    Дата рождения:<br>
+                    <input name="field-date" value="" type="date">
+                </label><br><br>
+
+                Пол:<br>
+                <label><input type="radio" name="my_radio" value="Мужской">Мужской</label>
+                <label><input type="radio" name="my_radio" value="Женский">Женский</label><br><br>
+
+                Количество конечностей:<br>
+                <label><input type="radio" name="my_radio" value="1">1</label>
+                <label><input type="radio" name="my_radio" value="2">2</label>
+                <label><input type="radio" name="my_radio" value="3">3</label>
+                <label><input type="radio" name="my_radio" value="4">4</label><br><br>
+
+                <label>
+                    Сверхспособности:<br>
+                    <select name="field-name-4" multiple="multiple">
+                        <option value="Бессмертие">Бессмертие</option>
+                        <option value="Прохождение сквозь стены">Прохождение сквозь стены</option>
+                        <option value="Левитация">Левитация</option>
+                    </select>
+                </label><br><br>
+
+                <label>
+                    Биография:<br>
+                    <textarea name="field-name-2" placeholder="Напишите о себе..."></textarea>
+                </label><br><br>
+
+                <label><input type="checkbox" name="check-1">С контрактом ознакомлен</label><br>
+
+                <input type="submit" value="Отправить">
+
+            </form>
+        </div>
+    </div>
+</main>
+<footer>ПеТрИщЕв 2021</footer>
+
+</body>
+</html>

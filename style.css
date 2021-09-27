@@ -1,0 +1,157 @@
+@media screen and (max-width:600px){
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+    main {
+        background-color: cadetblue;
+    }
+    .name {
+        display: flex;
+        justify-content: center;
+    }
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px 10px 0px;
+    }
+    .table {
+        order: 1;
+        margin-bottom: 30px;
+    }
+    footer{
+        height: 40px;
+    }
+}
+
+@media screen and (min-width : 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+    }
+    #container{
+        padding-left: 0px;
+    }
+    .table {
+        margin-bottom: 0px;
+    }
+    footer{
+        height: 30px;
+    }
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    padding-top: 15px;
+    margin-bottom: -16px;
+    background-color: darkseagreen;
+    border-bottom: 1px solid peachpuff;
+}
+
+footer {
+    width: 100%;
+    margin:0;
+    background-color: cornsilk;
+    text-align: center;
+}
+#container {
+    background-color: indianred;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 15px;
+    max-width: 960px;
+
+}
+.navigation{
+    background-color: silver;
+    height: 50px;
+    margin: 0;
+    align-items: center;
+}
+
+body {
+    background-color:palegoldenrod;
+    margin: 0;
+    font-family: serif, "Times new Roman";
+    align-items: center;
+}
+
+.name{height: 50px;
+    max-width: 960px;
+    padding: 10px;}
+
+#logotip {
+    float:left;
+    padding-right: 10px;
+    padding-left: 20px;
+    height: 75px;
+    width: 75px;
+}
+
+#links {
+    margin: 0;
+}
+
+#form {
+    margin: 10px 10px 20px 10px;
+}
+
+table {
+    display: flex;
+    width: 400px;
+
+    margin: 0 auto;
+}
+
+tbody{margin:0 auto;}
+form{text-align: center; font-size: 1.7em;}
+.header_table {
+    width: 400px;
+    background-color: lightcoral;
+    border: 1px solid lavender;
+}
+
+tr {
+    background-color: darkseagreen;
+    border-bottom: 1px solid palevioletred;
+}
+
+tr td {
+    border-right: 1px solid darkslategrey;
+}
+
+tr td:first-child {
+    border-left: 1px solid pink;
+}
+tr, td{font-size: 1.1em;}
+
+a {
+    color: cadetblue;
+}
+
+a:hover {
+    color: lightgreen;
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+input{font-size: 1em;}
+.even {
+    background-color: skyblue;
+}
+
+.union{
+    background-color: navajowhite;
+}
