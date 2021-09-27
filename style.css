@@ -57,7 +57,7 @@ header {
 
 footer {
     width: 100%;
-    margin:0;
+    margin: 0;
     background-color: cornsilk;
     text-align: center;
 }
@@ -68,7 +68,6 @@ footer {
     margin: 0 auto;
     margin-top: 15px;
     max-width: 960px;
-
 }
 .navigation{
     background-color: silver;
@@ -78,13 +77,14 @@ footer {
 }
 
 body {
-    background-color:palegoldenrod;
+    background-color: palegoldenrod;
     margin: 0;
     font-family: serif, "Times new Roman";
     align-items: center;
 }
 
-.name{height: 50px;
+.name{
+    height: 50px;
     max-width: 960px;
     padding: 10px;}
 
